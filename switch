@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class lab19pt2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Select one of the following options:");
+        System.out.println("1: Resume");
+        System.out.println("2: Website");
+        System.out.println("3: LinkedIn");
+        System.out.println("4: GitHub");
+
+        int selection;
+
+        do {
+            System.out.println("Select one of the following options:");
+            System.out.println("1: Resume");
+            System.out.println("2: Website");
+            System.out.println("3: LinkedIn");
+            System.out.println("4: GitHub");
+            selection = sc.nextInt();
+
+            switch (selection) {
+                case 1:
+                    System.out.println("Here is a link to my Resume");
+                    break;
+                case 2:
+                    System.out.println("Here is a link to my Website");
+                    break;
+                case 3:
+                    System.out.println("Here is a link to my LinkedIn");
+                    break;
+                case 4:
+                    System.out.println("Here is a link to my GitHub");
+                    break;
+            }
+        } while (selection != 0);
+    }
+}
